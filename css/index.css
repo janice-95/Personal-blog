@@ -1,0 +1,59 @@
+body{
+    background: url(../image/back_1.jpg) repeat;
+    background-size: cover;
+
+}
+
+#container {
+    overflow:hidden;
+    height: 600px;
+    /* background-color: rgba(255, 0, 157, 0.3); */
+}
+#img_gua {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    display: block;
+    animation:turn 5s linear infinite; 
+}
+@keyframes turn{
+    0%{-webkit-transform:rotate(0deg);}
+    25%{-webkit-transform:rotate(90deg);}
+    50%{-webkit-transform:rotate(180deg);}
+    75%{-webkit-transform:rotate(270deg);}
+    100%{-webkit-transform:rotate(360deg);}
+  }
+#img_gua_left {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    display: none;
+}
+#img_gua_right {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    display: none;
+}
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    opacity: 1;
+    }
+    
+    #loading img {
+    width: 100%;
+    position: absolute;
+    z-index: 2001;
+    }
